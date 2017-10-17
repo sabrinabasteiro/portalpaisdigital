@@ -1,0 +1,141 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
+    <style type="text/css">
+      html, body, #map {
+        height: 100%;
+      }
+      .filtro {
+        color: black;
+        font-weight:bold;
+        background-color: yellow
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- twitter bootstrap -->
+    <!-- <link href="css/bootstrap-combined.min.css" rel="stylesheet"> -->
+    
+    <!-- twitter bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- flat-ui bootstrap -->
+    <link href="css/flat-ui.css" rel="stylesheet">
+
+    <!-- floaing-menu -->
+    <link href="css/floating-menu.css" rel="stylesheet">
+
+   <!-- leaflet -->
+    <link href="css/leaflet.css" rel="stylesheet"/>
+
+    <!-- leaflet.awesome -->
+    <link href="css/leaflet.awesome-markers.css" rel="stylesheet"/>
+
+    <!-- markerCluster -->
+    <link href="css/MarkerCluster.Default.css" rel="stylesheet"/>
+    <link href="css/MarkerCluster.css" rel="stylesheet"/>
+
+    <!-- font-awesome -->
+    <link href="css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+
+    <!-- jquery / zepto -->
+    <!-- <script src="js/lib/zepto.min.js"></script> -->
+    <script src="js/lib/jquery-2.0.3.min.js"></script>
+
+    <!-- twitter bootstrap -->
+    <script src="js/lib/bootstrap.min.js"></script>
+
+    <!-- leaflet -->
+    <script src="js/lib/leaflet.js"></script>
+
+    <!-- markerCluster -->
+    <script src="js/lib/leaflet.markercluster.min.js"></script>
+
+    <!-- leaflet.awesome -->
+    <script src="js/lib/leaflet.awesome-markers.min.js"></script>
+
+    <!-- spin.js -->
+    <script src="js/lib/leaflet.spin.js"></script>
+    <script src="js/lib/spin.min.js"></script>
+
+    <!-- underscore -->
+    <script src="js/lib/underscore-min.js"></script>
+
+    <!-- cartodb connector -->
+    <script src="js/cartodbData.js"></script>
+
+    <!-- floating menu -->
+    <script src="js/floating-menu.js"></script>
+
+    <!-- main -->
+    <script src="js/main.js"></script>
+
+
+    <div id="cd-nav" class="is-fixed">
+      <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+
+      <nav id="cd-main-nav">
+
+        <div class="todo">
+          <div class="todo-search">
+            <input class="todo-search-field" id="filtro" style="width:85%" type="search" value="" placeholder="buscar...">
+          </div>
+          <ul>
+
+            
+            <li class="tipo_check" data-tipo="Espacios Culturales">
+              <div class="todo-icon fui-user"></div>
+              <div class="todo-content">
+                <h4 class="todo-name">Capa 1</h4>
+                Centros culturales comunitarios
+              </div>
+            </li>
+
+            <li class="tipo_check" data-tipo="Industrias Culturales">
+              <div class="todo-icon fui-user"></div>
+              <div class="todo-content">
+                <h4 class="todo-name">Capa 2</h4>
+                Industrias culturales
+              </div>
+            </li>
+
+            <li class="tipo_check" data-tipo="Festivales">
+              <div class="todo-icon fui-user"></div>
+              <div class="todo-content">
+                <h4 class="todo-name">Capa 3</h4>
+                Festivales
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        </div>  
+<div id="encabezado" style="height: 80px; left: 0px; top: 0px; width: 1366px;">
+            <div style="height: 80px;"> 
+                <table width="100%" cellspacing="0" cellpadding="0" border="0">  
+                    <tbody>
+                        <tr> 
+                            <td width="50%"> 
+                                <img title="IDE" src="images/todo/logoizquierda.png" style="margin-top:-50px;width: 556px;height: 80px" alt="IDE"> 
+                            </td>
+                            <td align="right" width="50%"> 
+                                <img title="Logo Municipalidad" src="images/todo/logoderecha.png" style="margin-right: 33px;width: 556ha.png" style="marginpx;height: 80px" alt=""> 
+                            </td>
+                        </tr> 
+                    </tbody>
+                </table>  
+            </div>
+        </div>     
+    <div style="clear:both;">
+      <div id='map' class='map'></div>
+    </div>
+
+
+  </body> 
+
+</html>
